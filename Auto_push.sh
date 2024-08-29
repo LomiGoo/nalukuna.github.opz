@@ -1,4 +1,3 @@
-#!/bin/bash
-git add .
-git commit -m "Automated commit: added/updated files"
+git add your_folder/
+git commit -m "Adding folder"
 git push origin main
