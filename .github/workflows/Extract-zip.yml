@@ -1,0 +1,26 @@
+name: Extract-zip
+
+# Trigger this workflow on push events with ZIP files
+on: 
+  push:
+    paths:
+      - '*.zip'
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository content
+      uses: actions/checkout@v3
+
+    - name: Unzip file
+      run: unzip Opz.zip -d .
+
+    - name: Commit extracted files
+      run: |
+        git config --global user.email "chevellenacionales11@gmail.com"
+        git config --global user.name "GitHub Action"
+        git add output-directory/*
+        git commit -m "Automated extraction of ZIP file"
+        git push origin main
