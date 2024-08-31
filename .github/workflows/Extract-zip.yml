@@ -1,6 +1,5 @@
 name: Extract-zip
 
-# Trigger this workflow on push events with ZIP files
 on: 
   push:
     paths:
@@ -17,14 +16,21 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
-    - name: Unzip file
-      run: unzip Opz.zip -d .
+        node-version: '20' # Specify Node.js version 20
 
-    - name: Commit extracted files
+    - name: Configure Git
       run: |
         git config --global user.email "chevellenacionales11@gmail.com"
         git config --global user.name "GitHub Action"
+
+    - name: Unzip file
+      run: unzip your-zip-file.zip -d .
+
+    - name: Check repository status
+      run: git status
+
+    - name: Commit extracted files
+      run: |
         git add .
-        git commit -m "Automated extraction of ZIP file"
+        git commit -m "Automated extraction of ZIP file" || echo "No changes to commit"
         git push origin main
