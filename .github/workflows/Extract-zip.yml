@@ -1,4 +1,4 @@
-name: Extract-zip
+name: Opz.zip
 
 on: 
   push:
@@ -24,7 +24,7 @@ jobs:
         git config --global user.name "GitHub Action"
 
     - name: Unzip file
-      run: unzip your-zip-file.zip -d .
+      run: unzip Opz.zip -d .
 
     - name: Check repository status
       run: git status
