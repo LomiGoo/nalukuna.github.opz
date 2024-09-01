@@ -1,0 +1,68 @@
+body 
+  {background-image: url('img/hdTifaV.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;}
+ 
+ .box1
+ {width: 40vw;
+  height: 40vh;}
+
+#contr1
+  {background-color: floralwhite;
+   border: 3px solid hsl(30, 6%, 25%);
+   border-radius: 10px;
+   left: 1px;
+   position: relative;
+   float: left;}
+  
+img
+  {width: 25vw;
+   height: 39vh;
+   left: 5vw;
+   top: 0.5vh;
+   position: absolute;}
+
+#contr2
+  {background-color: ghostwhite;
+  border: 0.7vw solid palevioletred;
+   border-radius: 3vw;
+   padding: 2vw;
+   margin-left: 45%;
+   display: block;}
+   
+.txtf
+   {font-family: "New Amsterdam";
+   font-size: 1.6em;
+   font-weight: bold;
+   color: white;
+   -webkit-text-stroke: 1.5px palevioletred;}
+
+#float1
+  {float: left;
+   margin-right: 10px;
+   margin-bottom: -10px;}
+   
+.bg-clr
+  {background-color: 
+  hsl(350, 89%, 60%);
+   margin-left: -0.5em;
+   margin-right: -0.5em;}
+   
+.fix
+  {height: 100px;
+   width: 100px;
+   margin-left: 73vw;
+   margin-top: 1.5vh;
+  }
+   
+#tifaPlay
+  {background-color: transparent;}
+  
+#img1
+  {width: 50vw;
+   height: 65px;
+   margin-top: 68.5vh;
+   margin-left: 3vw;}
+  

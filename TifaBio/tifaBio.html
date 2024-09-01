@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" 
+    href="forTifaBio.css">
+<title> About Tifa Lockhart </title>
+</head>
+<body>
+<div id="float1">
+<div id="contr1" class="box1">
+    <img src="img/Tifa_FFVII_Rebirth.png" alt="tifa">
+</div>
+</div>
+<div style="text-align: center;">
+    <span id="contr2" class="txtf">
+      TIFA LOCKHART
+</span>
+<p style=
+      "text-align: left;
+      margin-left: 1vw;
+      margin-right: -1vw;
+      font-weight: bold;
+      color: white;
+      -webkit-text-stroke: 0.7px black;
+font-family: New Amsterdam;">
+      Tifa Lockhart is a major recurring character in the Final Fantasy VII series. She is a playable character in Final Fantasy VII and Final Fantasy VII Remake, the main protagonist of the novel Final Fantasy VII Remake Trace of Two Pasts, and also plays a supportive role in Final Fantasy VII: Advent Children, Dirge of Cerberus -Final Fantasy VII-, and Crisis Core -Final Fantasy VII-. She is a friend of Cloud Strife, and a member of the resistance group Avalanche.
+</p>
+</div>
+<footer class="bg-clr">
+  <video id="tifaPlay" class="fix" autoplay muted loop>
+    <source src="videos/Tifa-edit.mp4"
+     type="video/mp4">
+    <source src="videos/Tifa-edit.ogg"
+     type="video/ogg">
+    <source src="videos/Tifa-edit.webm"
+     type="video/webm">
+</video>
+
+<script>
+    const video =
+    document.getElementById
+    ('tifaPlay');
+  
+    video.addEventListener
+    ('touchstart', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    video.muted = false;
+    video.volume = 1.0;});
+  
+    document.addEventListener
+    ('touchstart', (event) => { 
+  
+  if (video.paused && !video.muted) 
+  {video.play();}});
+</script>
+<a href=
+      "https://finalfantasy.fandom.com/wiki/Tifa_Lockhart">
+<img id="img1" src=
+    "https://static.wikia.nocookie.net/c8710a5e-97c6-4245-8195-9179cc91d2f2" alt="final fantasy fandom">
+</a>
+</footer>
+</body>
+</html>
