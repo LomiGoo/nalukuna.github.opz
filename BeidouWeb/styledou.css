@@ -1,0 +1,176 @@
+body
+  {background-image: url('https://i.pinimg.com/564x/e8/03/5f/e8035fbb966b92e00e51aca3a023631f.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow-x: hidden;
+   overflow-y: auto;
+   margin: 0;
+   padding: 0;
+   user-select: none;
+   max-width: 100rem;
+   max-height: 100rem;
+   box-sizing: border-box;}
+ 
+ /* for txt fixes !! */ 
+#txtfix1
+  {color: ghostwhite;
+   margin-top: 1.5rem;
+   margin-left: 10rem;
+   padding-top: 0.5rem;}
+  
+#txtfix2
+  {color: ghostwhite;
+   margin-top: -0.5rem;
+   margin-left: 6rem;
+   padding-bottom: 5rem;}
+   
+#txtfix3
+  {color: #ca93e2;
+   display: inline-block;}
+  
+#txtfix4
+  {color: #ca93e2;
+   display: inline-block;}
+
+#txtfix5
+  {color: ghostwhite;
+  background-color: 
+  hsl(271, 91%, 65%);
+   display: inline-block;}
+
+#txtfix6
+  {text-decoration: underline;
+   font-weight: bold;
+   color: hsl(0, 84%, 60%);}
+
+
+/*-------------------------------------*/
+  
+/* for img fixes !! */
+#imgfix1
+  {width: 5rem;
+   border-radius: 100%;
+   float: left;
+   margin-top: 0.150rem;
+   margin-left: 0.2em;}
+
+#imgfix2
+  {width: 6.5rem;
+   margin-top: -1vh;
+   margin-left: 1em;
+   display: inline-block;
+   box-sizing: border-box;
+  }
+   
+#imgfix3
+  {width: 13rem;
+  box-sizing: border-box;
+  margin-top: -14.5em;
+  margin-left: -4.5em;
+  display: block;
+  border-radius: 15%;
+  border: 3px solid #d6a6a6;}
+  
+#imgfix4
+  {width: 2.5rem;
+   margin-top: -7em;
+   margin-left: -4em;
+   margin-bottom: -5em;
+   display: block;
+   box-sizing: border-box;}
+
+/*------------------------------------*/
+
+.container1
+  {display: flex;
+  justify-content: flex-end;}
+
+.box
+  {font-size: 13px;
+   font-weight: bold;
+   text-align: center;
+   border-radius: 10%;
+   margin-top: -4.3em;
+   margin-bottom: 7.5em;
+   margin-right: 1.5em;
+   padding: 0.5em;
+   padding-left: 1.2em;
+   padding-right: 1.2em;}
+
+#login
+  {background-color: 
+  ghostwhite;
+   color: hsl(271, 91%, 65%);
+   border: 1.5px solid;}
+
+#signup
+  {background-color: 
+   hsl(271, 91%, 65%);
+   color: ghostwhite;
+   border: 1.5px solid;}
+
+.container2
+  {border: 5px solid hsl(255, 92%, 76%);
+   border-radius: 5%;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+   background-color: whitesmoke;
+   padding: 240px;
+   margin: 0;
+   margin-top: -5em;
+   padding-right: 5em;
+   padding-left: 5em;
+   padding-bottom: 16em;
+   overflow: hidden;}
+  
+.container3
+  {margin: 9em;
+   margin-top: -12em;
+   text-align: justify;}
+   
+.box2
+  {margin: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+   border-radius: 3%;
+   padding: 0.2em;}
+
+.container4
+  {text-align: justify;
+   margin: -4rem;
+   margin-left: -1em;
+   margin-top: 1em;}
+
+.container5
+  {text-align: justify;
+    margin: -4.1em;
+    margin-left: -4em;
+    margin-top: 5em;
+    margin-bottom: -15em;}
+
+.container6
+  {text-align: right;}
+
+.container7
+  {font-size: 3vw;
+   text-align: center;}
+
+.box3
+  {display: flex;
+   display: inline-block;
+   margin: 0.5rem;
+   padding: 4em;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+   font-weight: bolder;
+   border-radius: 10%;
+   border: 2px solid #ca7ede;}
+
+#page1
+  {background-color: ghostwhite;
+   color: #deafea;}
+
+#page2
+  {background-color: ghostwhite;
+   color: #deafea;}
