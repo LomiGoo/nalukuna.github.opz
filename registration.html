@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Registration</title>
+</head>
+<body bgcolor= "#D2042D">
+                <!-- Title -->
+                <h1>Rizal High School Enrollment Registration Form</h1>
+            </td>
+        </tr>
+    </table>
+    
+    <div>
+        <form action="submittedform.html" method="POST">
+           <table border="1" align="center" height"70">
+               <td bgcolor="white">
+            <!-- Parent Information -->
+            <fieldset>
+                <legend><h2>Student Information</h2></legend>
+
+                <!-- Full Name -->
+                <div>
+                    <label for="FullName">Full Name:</label>
+                    <input type="text" id="FullName" name="FullName" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="Email">Email Address:</label>
+                    <input type="email" id="Email" name="Email" required>
+                </div>
+
+                <!-- Date of Birth -->
+                <div>
+                    <label for="DOB">Date of Birth:</label>
+                    <input type="date" id="DOB" name="DOB" required>
+                </div>
+                
+                <!-- Cellphone Number -->
+                <div>
+                    <label for="Cellphone">Cellphone Number:</label>
+                    <input type="text" id="Cellphone" name="Cellphone" required>
+                </div>
+                
+                <!-- LRN Number -->
+                <div>
+                    <label for="parentLRN">LRN Number:</label>
+                    <input type="text" id="LRN" name="LRN" required>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Parents Information -->
+            <fieldset>
+                <legend><h2>Parents Information</h2></legend>
+
+                <div>
+                    <label for="parentName">Name of Parent:</label>
+                    <input type="text" id="parentName" name="parentName" required>
+                </div>
+
+                <div>
+                    <label for="parentContact">Parent Contact Number:</label>
+                    <input type="text" id="parentContact" name="parentContact" required>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Select Strands -->
+            <div>
+                <label for="courses">Select Strands:</label>
+                <select id="courses" name="courses" required>
+                    <option value="ICT Prog">ICT Prog</option>
+                    <option value="TCT CSS">TCT CSS</option>
+                    <option value="STEM">STEM</option>
+                    <option value="TVL">TVL</option>
+                    <option value="HUMSS">HUMSS</option>
+                    <option value="A & D">A & D</option>
+                    <option value="ABM">ABM</option>
+                    <option value="HE 3">HE 3</option>
+                    <option value="HE 4">HE 4</option>
+                    <option value="SPORTS">SPORTS</option>
+                    <option value="IA">IA</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Gender Section -->
+            <fieldset>
+                <legend><h2>Gender</h2></legend>
+                
+                <div>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="other" name="gender" value="Other" required>
+                    <label for="other">Other</label><br>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Submit Enrollment</button>
+            </div>
+        </form>
+    </div>
+</td>
+</table>
+</body>
+</html>
