@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> My Form </title>
+  <style>
+    #grade
+    {
+      width: 20px;
+    }
+    
+    #section
+    {
+      width: 85px;
+    }
+    
+    #align
+    {
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
   <div align="center">
@@ -18,8 +34,16 @@
           <input type="text" id="Lname" required>
           <br>
           <br>
-          <label for="g&amp;s"> Grade&amp;Section : </label>
-          <input type="text" id="g&amp;s" required>
+        <div id="align">
+          <label for="grade"> Grade : </label>
+          <input type="text" id="grade" maxlength="2" required>
+          <br>
+          <br>
+          <label for="section"> Section : </label>
+          <input type="text" id="section" maxlength="10" required>
+        </div>
+          <br>
+          <br>
           <input type="submit">
           <br>
           <pre>

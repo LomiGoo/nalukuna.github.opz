@@ -1,0 +1,14 @@
+-- form 
+-- stu_rec 
+-- shopping
+-- customers
+-- join_tb
+-- procedure
+-- sel_ID
+-- for_null_TID
+-- describe_both
+-- ProdName
+-- Price
+-- Trsc_Date
+-- auto_increment
+
