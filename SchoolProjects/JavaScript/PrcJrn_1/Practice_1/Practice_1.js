@@ -1,8 +1,8 @@
 const Fname = "Alenere";
 const Fname1 = "David";
 
-x = "she";
-y = "coffee";
+const x = "she";
+const y = "coffee";
 
 document.getElementById("opz").innerHTML = Fname + 
 ", the friendly neighbor, waved at " + Fname1 +
