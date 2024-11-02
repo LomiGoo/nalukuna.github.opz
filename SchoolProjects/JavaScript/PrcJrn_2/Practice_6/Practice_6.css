@@ -1,0 +1,33 @@
+body {
+     margin: 0;
+     text-align: center;
+}
+
+.btn {
+     margin-top: 50px;
+     font-size: 1.2em;
+     background: #9ee5ae;
+     color: #227122;
+     border: 2px solid #13701f;
+     border-radius: 5px;
+     padding: 5px 10px 5px 20px;
+     letter-spacing: 10px;
+     transition: ease-out 0.2s;
+}
+
+.btn:hover {
+     background: #00563F;
+     border: 2px solid #3d632e;
+     color: #EFC2D1;
+     transition: ease-in 0.2s;
+}
+
+#dice {
+     font-size: 4em;
+     border: 2px solid #3b5931;
+     border-radius: 15px;
+     margin: 50px;
+     padding: 1.2em;
+     background: #00563F;
+     color: #EFC2D1;
+}

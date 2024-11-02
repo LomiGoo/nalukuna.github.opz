@@ -1,0 +1,212 @@
+body {
+     margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+     padding: 5px;
+     
+}
+
+#navi1 {
+     display: inline-block;
+}
+
+#title {
+     display: inline-block;
+     position: relative;
+     top: -18px;
+}
+
+#navi2 {
+     float: right;
+     position: relative;
+     bottom: -15px;
+}
+
+.accBtn {
+     text-decoration: none;
+     margin: 0 10px;
+     background: #21375d;
+     color: white;
+     padding: 3px 10px;
+     border-radius: 15px;
+     border: 2px solid #8799b7;
+}
+
+/* MAIN CONTENT */ 
+main {
+     padding: 5px 15px;
+}
+
+#head {
+     display: inline-block;
+}
+
+#logo_link {
+     text-decoration: none;
+}
+
+#logo_link{
+     -webkit-tap-highlight-color: transparent;
+}
+
+#GIlogo {
+     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+}
+
+#title_2 {
+   display: inline-block;  
+   position: relative;
+   top: -50px;
+   left: 5px;
+   font-size: 19.5px;
+   padding: 0 5px 3px;
+   color: white;
+   background: rgb(53,75,138,0.7);
+   border: 2px solid #acbae1;
+   border-radius: 5px;
+}
+
+#descrpt_web {
+     display: block;
+     margin: 20px;
+     padding: 0;
+     position: relative;
+     top: -90px;
+     left: 90px;
+     width: 70%;
+     text-align: center;
+     font-size: 13px;
+     color: #b1b7c6;
+     font-family: "Georgia";
+}
+
+.shop {
+     display: flex;
+     overflow: auto;
+     white-space: nowrap;
+}
+
+.item {
+     margin: 10px;
+     padding: 5px 15px 5px 35px;
+     background: rgb(55,50,92,0.8);
+     border-radius: 15px;
+     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5),
+                 1px 1px 5px 1px  rgba(0,0,0,0.5) inset,
+                 -1px -1px 5px 1px rgba(0,0,0,0.5) inset;
+     transition: ease-out 0.3s; 
+}
+
+#venti:hover {
+     background: #4C8F66;
+     transition: ease-in 0.3s;
+}
+
+#Yae:hover {
+     background: #983D5C;
+     transition: ease-in 0.3;
+}
+
+#Kazuha:hover {
+     background: #963B38;
+     transition: ease-in 0.3s;
+}
+
+#Raiden:hover {
+     background: #653E99;
+     transition: ease-in 0.3s;
+}
+
+#Diluc:hover {
+     background: #B34E56;
+     transition: ease-in 0.3s;
+}
+
+#Xiao:hover {
+     background: #60C09A;
+     transition: ease-in 0.3s;
+}
+
+#Klee:hover {
+     background: #9E3D37;
+     transition: ease-in 0.3s;
+}
+
+#Hutao:hover {
+     background: #9E3D37;
+     transition: ease-in 0.3s;
+}
+
+#Tartaglia:hover {
+     background: #4D82B4;
+     transition: ease-in 0.3s;
+}
+
+#Zhongli:hover {
+     background: #8B6950;
+     transition: ease-in 0.3s;
+}
+
+#Ganyu:hover {
+     background: #3B6094;
+     transition: ease-in 0.3s;
+}
+
+#Keqing:hover {
+     background: #694EB5;
+     transition: ease-in 0.3s;
+}
+
+#Yelan:hover {
+     background: #414EC0;
+     transition: ease-in 0.3s;
+}
+
+#Nahida:hover {
+     background: #89B05F;
+     transition: ease-in 0.3s;
+}
+
+#YaoYao:hover {
+     background: #A0AF5C;
+     transition: ease-in 0.3s;
+}
+img {
+     border-radius: 5px;
+}
+
+.imgfix {
+     box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3);
+}
+
+.itemName {
+     color: white;
+}
+
+h6 {
+     color: ghostwhite;
+}
+
+.buy-btn {
+     background: rgb(67,22,166,0.5);
+     margin: 0 0 5px 150px;
+     padding: 5px 5px;
+     border-radius: 5px;
+     color: white;
+     font-size: 15px;
+     box-shadow: 1px 1px 5px #302246 inset;
+}
+
+.bbtn {
+     text-decoration: none;
+     color: white;
+     -webkit-tap-highlight-color: transparent;
+     
+}
+
+.bbtn:hover {
+     color: #19196a;
+     transition: ease-in-out 0.4s;
+}
