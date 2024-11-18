@@ -12,7 +12,7 @@ h1 {
 div {
      background: #fa2a59;
      margin: 10px;
-     padding: 15px;
+     padding: 35px;
      border-radius: 15px;
 }
 
@@ -22,10 +22,11 @@ div {
      border-radius: 10px;
      border: 2px solid #df4671;
      font-weight: bold;
-     font-size: 0.8em;
+     font-size: 1.1em;
      font-family: "Georgia";
-     padding: 5px 10px;
+     padding: 10px 20px;
      transition: ease-out 0.2s;
+     margin-top: 1.5em;
 }
 
 #submit:hover {
