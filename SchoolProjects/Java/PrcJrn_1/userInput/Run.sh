@@ -1,0 +1,1 @@
+javac userInput.java && java userInput

@@ -1,0 +1,1 @@
+javac dateFormat.java && java dateFormat

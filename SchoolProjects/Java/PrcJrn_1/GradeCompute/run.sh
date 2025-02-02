@@ -1,0 +1,1 @@
+javac GrCompute.java && java GrCompute

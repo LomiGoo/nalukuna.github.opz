@@ -16,12 +16,12 @@ N = 27150;
 e = 0.05;
 
 e = Math.pow(e, 2);
-x = N * e + 1;
+x = (N * e) + 1;
 temp = N / x;
 
 n = String.format("%.2f", temp);
 
 
-System.out.println(n + "or" + (int) n);
+System.out.println(n + " or " + n);
      }
 }

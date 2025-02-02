@@ -1,0 +1,1 @@
+javac Print.java && java Print

@@ -11,7 +11,7 @@ public static void main(String[] args) {
      int MAPEH = 87;
      
      int compile;
-     float genAve;
+     int genAve;
      
      System.out.println("Filipino " + Filipino);
      System.out.println("English " + English);
@@ -25,7 +25,7 @@ public static void main(String[] args) {
      compile = Filipino + English + Mathematics +
                Science + AP + ESP + TLE + MAPEH;
               
-     genAve = compile / 8f;
+     genAve = compile / 8;
      System.out.println("GenAve " + genAve);
      System.out.println("");
      
