@@ -23,6 +23,8 @@ public class main {
         System.out.println("| " + orange.getName() + "      | " + orange.getColor() + "    | P" + orange.getPrice() + "         |");
         System.out.println("| " + avocado.getName() + "     | " + avocado.getColor() + "    | P" + avocado.getPrice() + "         |");
         System.out.println("+------------+--------+-------------+");
+            
+
     }
 }
 
