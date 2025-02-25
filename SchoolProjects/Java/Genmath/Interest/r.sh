@@ -1,0 +1,1 @@
+javac Interest.java && java Interest

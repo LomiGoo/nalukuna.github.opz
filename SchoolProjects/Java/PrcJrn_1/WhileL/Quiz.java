@@ -204,6 +204,7 @@ public class Quiz {
                }
           } else {
                System.out.println("Goodbye!");
+               break;
           }
           }  
      }

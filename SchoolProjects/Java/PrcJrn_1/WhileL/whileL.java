@@ -55,7 +55,7 @@ public class whileL {
                     println("Did not found");
                }
                e++;
-               break;
+               
           }
           
           int r = 0;

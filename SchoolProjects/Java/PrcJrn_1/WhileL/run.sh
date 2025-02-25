@@ -1,2 +1,2 @@
-# javac whileL.java && java whileL.java
-javac Quiz.java && java Quiz
+javac whileL.java && java whileL.java
+# javac Quiz.java && java Quiz
