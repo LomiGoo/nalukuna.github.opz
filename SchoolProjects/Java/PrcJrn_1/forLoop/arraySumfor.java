@@ -1,12 +1,15 @@
 public class arraySumfor {
      
      public static void main(String[] args) {
-          int nums[] = {10, 20, 30, 40, 50};
-          int ans = 0;
-          
-          for(int num : nums) {
-               ans = ans + num;
+     int num[] = {5, 10, 15};
+     int index = 0;
+     int sum = 0;
+     
+          for(int i = 0; i < num.length; i++) {
+               System.out.println("Element at index " + index + " : " + num[i]);
+               index++;
+               sum = sum + num[i];
           }
-          System.out.println(ans);
+          System.out.println("Total sum : " + sum);
      }
 }

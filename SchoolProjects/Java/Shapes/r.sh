@@ -1,0 +1,1 @@
+javac square.java && java square

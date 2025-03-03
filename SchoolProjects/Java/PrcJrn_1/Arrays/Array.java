@@ -16,7 +16,7 @@ public class Array {
      String fruits[] = {"Apple", "Orange", "Mango", "Grapes"};
      
      // CHANGE VALUE INSIDE ARRAY
-     fruits[3] = "avocado";
+     fruits[0] = "avocado";
      
      // MAKE ARRAY LIMIT
      String colors[] = new String[5];
