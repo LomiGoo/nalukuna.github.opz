@@ -22,7 +22,7 @@ public class bitwise {
           
 // | OR - CHECKS IF EITHER BITS HAS 1
           
-          int a = 2, b = 6, result2 = a | b;
+          int a = 5, b = 3, result2 = a | b;
           
           System.out.println("| OR OPERATOR");
           System.out.println("");
