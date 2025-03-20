@@ -9,7 +9,6 @@ public class gw {
      int res;
      int count = 0;
      int i;
-     int index = 0;
      boolean run = true;
      
      System.out.println("○ WELCOME TO EVEN NUMBERS CHECKER ○\n");
@@ -17,7 +16,7 @@ public class gw {
      System.out.println("》to exit program, enter 0");
      System.out.println("》compile for result, enter -1\n");
      do {
-          System.out.print("enter random numbers to check for even : ");
+          System.out.print("$ enter random numbers to check for even : ");
           res = s.nextInt();
           num[count] = res;
           count++;
@@ -31,37 +30,19 @@ public class gw {
      
      //if(run == false) break;
      
-     System.out.print("\nlist of num that you entered to be check for even : [");
-     while(run == true) {
-          System.out.print(num[index]);
-          index++;
-          if(num[index] == 0) run = false;
-          else System.out.print(", ");
-     } 
-     System.out.print("]\n");
+     count -= 1;
+     int inputNums[] = Arrays.copyOfRange(num, 0, count);
+     System.out.print("\nlist of num to be check for even : \n" + Arrays.toString(inputNums) + "\n");
      
-     boolean odd;
-     System.out.println(index);
-     System.out.print("\neven numbers compiled : [");
-          for(i = 0; i < index - 1; i++) {
-               odd = false;
-               if(num[i] % 2 == 0) {
-                    if(odd == true) {
-                         System.out.print(", ");
-                    }
-                    System.out.print(num[i]);
-                    odd = true;
+     int evenNums[] = new int[20];
+     int index = 0;
+          for(int numbir : inputNums) {
+               if(numbir % 2 == 0) {
+                    evenNums[index] = numbir;
+                    index++;
                }
           }
-          System.out.print(num[i] + "]");
+          int finalEvenNums[] = Arrays.copyOfRange(evenNums, 0, index);
+          System.out.println("\nlist of even nums : \n" + Arrays.toString(finalEvenNums));
      }
 }
-/*
-6
-0 - 
-1 - 2
-2 - 
-3 - 4
-4 - 
-5 - 
-*/
