@@ -26,6 +26,7 @@ static void infoTryAg() {
 
 static boolean accFnd = false;
 static String checkInfo() {
+     accFnd = false;
      guardInfo g = new guardInfo();
      String user[] = g.getUsrN();
      String passW[] = g.getPass();

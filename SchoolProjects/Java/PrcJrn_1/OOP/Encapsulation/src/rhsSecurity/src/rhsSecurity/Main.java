@@ -2,6 +2,7 @@ package rhsSecurity;
 import java.util.Scanner;
 
 public class Main {
+     
      public static String usrN, pass, guardShift;
      public static String usrNs, passS, guardShiftS;
      public static int resp;
