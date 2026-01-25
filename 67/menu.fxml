@@ -6,17 +6,14 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.RadialGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1143.0" style="-fx-background-color: #a42bc9;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.menuController">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="618.0" layoutY="151.0" text="I - REGISTRAR " textFill="#fcfcfc">
+            <Label layoutX="627.0" layoutY="151.0" text="I - REGISTRAR " textFill="#171717">
                <font>
                   <Font name="Century Schoolbook Bold" size="48.0" />
                </font>
@@ -25,24 +22,8 @@
                <font>
                   <Font name="Brush Script MT Italic" size="24.0" />
                </font>
-               <textFill>
-                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.75" green="0.6840277910232544" blue="0.6840277910232544" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="0.8287037014961243" blue="0.8287037014961243" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </RadialGradient>
-               </textFill>
             </Label>
-            <Button layoutX="596.0" layoutY="294.0" mnemonicParsing="false" prefHeight="94.0" prefWidth="177.0" text="Request Form 137">
+            <Button fx:id="btnRequestForm" layoutX="596.0" layoutY="294.0" mnemonicParsing="false" onAction="#openRequestForm" prefHeight="94.0" prefWidth="177.0" text="Request Form 137">
                <font>
                   <Font size="18.0" />
                </font></Button>

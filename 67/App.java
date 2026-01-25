@@ -6,33 +6,33 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import javafx.scene.image.Image;
+import javafx.scene.paint.Color;
+import javafx.stage.StageStyle;
 
-/**
- * JavaFX App
- */
 public class App extends Application {
-
-    private static Scene scene;
-
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
     @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+    public void start(Stage stage) throws Exception {
+       
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/mavenproject1/menu.fxml"));
+       
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
         stage.setScene(scene);
+        
+        //ETO PANG ADD NG LOGO SA APP
+        //Image iconImage = new Image(getClass().getResourceAsStream("/com/goat/project/system/images/diosarapIcon.png"));
+        //stage.getIcons().add(iconImage);
+        //stage.setTitle("Sales and Records Management System");
+        
+        //PANG ADD TO NG CSS ITONG CODE
+        //scene.getStylesheets().add(getClass().getResource("/com/goat/project/system/css/loginPane.css").toExternalForm());
+        
         stage.show();
     }
-
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
-
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
-    }
-
-    public static void main(String[] args) {
-        launch();
-    }
-
 }
