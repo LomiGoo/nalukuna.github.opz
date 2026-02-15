@@ -3,37 +3,182 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?> 
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f7fa;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.NotificationsController">
    <top>
-      <VBox prefHeight="75.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="126.0" prefWidth="800.0" spacing="5.0" BorderPane.alignment="CENTER">
          <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            <Insets top="20.0" />
          </padding>
          <children>
-            <HBox alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="1160.0">
-               <padding>
-                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-               </padding>
+            <HBox alignment="TOP_RIGHT" prefHeight="37.0" prefWidth="800.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" text="Back">
+                  <Button mnemonicParsing="false" onAction="#handleHome" prefHeight="30.0" prefWidth="70.0" text="Home">
                      <font>
-                        <Font size="13.0" />
+                        <Font size="14.0" />
                      </font>
                   </Button>
+                  <VBox prefHeight="19.0" prefWidth="36.0" />
                </children>
             </HBox>
-            <Label text="🔔 NOTIFICATIONS">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="800.0" spacing="10.0">
+               <children>
+                  <Label text="🔔" textFill="#ddbf12">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Notifications" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #ff3b30; -fx-text-fill: white; -fx-padding: 4 10 4 10; -fx-background-radius: 15;" text="3 new" />
+               </children>
+            </HBox>
          </children>
-      </VBox> 
+      </VBox>
    </top>
+   <center>
+      <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="385.0" prefWidth="798.0" spacing="15.0">
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <children>
+                  <AnchorPane prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0.3, 0, 3);">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="18.0" prefHeight="100.0" prefWidth="316.0" spacing="15.0">
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                           <children>
+                              <Circle fill="#3bff1f" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                              <VBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="590.0">
+                                 <children>
+                                    <Label alignment="BOTTOM_LEFT" text="Request Approved">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Your request has been successfully processed." textFill="#666666">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="10 mins ago" textFill="#999999">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="0.0" prefWidth="169.0" />
+                                    <Label text="...">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0.3, 0, 3);">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="18.0" prefHeight="100.0" prefWidth="316.0" spacing="15.0">
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                           <children>
+                              <Circle fill="#ff1f1f" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                              <VBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="590.0">
+                                 <children>
+                                    <Label alignment="BOTTOM_LEFT" text="Request Approved">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Your request has been successfully processed." textFill="#666666">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="10 mins ago" textFill="#999999">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="0.0" prefWidth="169.0" />
+                                    <Label text="...">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0.3, 0, 3);">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="18.0" prefHeight="100.0" prefWidth="316.0" spacing="15.0">
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                           <children>
+                              <Circle fill="DODGERBLUE" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                              <VBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="590.0">
+                                 <children>
+                                    <Label alignment="BOTTOM_LEFT" text="Request Approved">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Your request has been successfully processed." textFill="#666666">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="10 mins ago" textFill="#999999">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Region prefHeight="0.0" prefWidth="169.0" />
+                                    <Label text="...">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="109.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" style="-fx-background-color: linear-gradient(to right, #4facfe, #00f2fe); -fx-text-fill: white; -fx-background-radius: 25; -fx-padding: 10 25 10 25; -fx-font-weight: bold;" text="Mark All as Read" />
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>
